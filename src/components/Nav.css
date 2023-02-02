@@ -1,0 +1,70 @@
+.container{
+    height: 60px;
+}
+.container .wrapper{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left ,
+.right,
+.center{
+    flex: 1;
+    text-align: center;
+}
+
+.container .wrapper .left .searchContainer{
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+.container .wrapper .left .searchContainer input{
+    border: none;
+}
+.container .wrapper .left{
+    display: flex;
+    align-items: center;
+}
+
+.container .wrapper .center .logo{
+    font-weight: bold;
+}
+.container .wrapper .right{
+    display: flex;
+    justify-content: flex-end;
+}
+.container .wrapper .right .menuItems{
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 380px){
+
+    .container{
+        height: 40px;
+    }
+    .container .wrapper{
+        padding: 10px 0px;
+    }
+    .container .wrapper .left .searchContainer input{
+        width:50px;
+    }
+    .container .wrapper .center .logo{
+        font-size: 20px;
+    }
+    .container .wrapper .left .language{
+        display: none;
+    }
+    .container .wrapper .right{
+        flex: 2;
+        justify-content: center;
+    }
+    .container .wrapper .right .menuItems{
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+}
