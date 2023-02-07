@@ -142,8 +142,6 @@ font-weight: 700;
 const Cart = () => {
   return (
     <Container>
-        <Navbars/>
-        <Annoucement/>
     
     <Wrapper>
     <Title>YOUR BAG</Title>

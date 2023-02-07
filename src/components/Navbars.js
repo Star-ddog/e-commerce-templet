@@ -3,8 +3,11 @@ import { Search } from '@material-ui/icons';
 import { ShoppingCartOutlined } from '@mui/icons-material';
 
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './Nav.css';
+
+
 
 const Navbars = () => {
 
@@ -25,16 +28,18 @@ const Navbars = () => {
             </div>
 
             <div className="center">
-              <h1 className="logo">Xtar-JS</h1>
+              <Link to={'/'} style={{textDecoration: "none", color: " black"}}><h1 className="logo">Xtar-JS</h1></Link>
             </div>
 
             <div className="right">
-              <div className="menuItems">REGISTER</div>
-              <div className="menuItems">LOGIN</div>
+              <Link to={'/register'} className="menuItems" style={{textDecoration: "none", color: " black"}}>REGISTER</Link>
+              <Link to={'/login'}  className="menuItems" style={{textDecoration: "none",  color: " black"}}>LOGIN</Link>
               <div className="menuItems">
+              <Link to={'/cart'} style={{textDecoration: "none", color: " black"}}>
               <Badge badgeContent={4} color="primary">
                 <ShoppingCartOutlined/>
               </Badge>
+              </Link>
               </div>
             </div>
         </div>

@@ -14,6 +14,7 @@ background: linear-gradient(
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 `;
 const Wrapper = styled.div`
     width:25%;

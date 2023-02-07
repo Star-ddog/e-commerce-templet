@@ -20,6 +20,7 @@
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    overflow-x: ;
 }
 .container .wrapper .left .searchContainer input{
     border: none;
@@ -32,6 +33,10 @@
 .container .wrapper .center .logo{
     font-weight: bold;
 }
+.container .wrapper .center .logo:hover{
+    color: brown;
+    transform: scale(1.1);
+}
 .container .wrapper .right{
     display: flex;
     justify-content: flex-end;
@@ -40,8 +45,11 @@
     margin-left: 28px;
     cursor: pointer;
 }
+.container .wrapper .right .menuItems:hover{
+    transform: scale(1.1);
+}
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 700px){
 
     .container{
         height: 40px;
